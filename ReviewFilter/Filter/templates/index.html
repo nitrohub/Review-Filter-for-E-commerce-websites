@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+
+{% block body %}
+
+<div class = "button-group" style="padding-top: 0.5%;padding-bottom: 0.5%;">
+    <a href = "{% url 'display_review'%}" class = "btn btn-primary btn-md" role="button" >Reviews</a>
+</div>
+
+<table class = "table table-hover">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>decision</th>
+            <th>hotel</th>
+            <th>poarity</th>
+            <th>source</th>
+            <th>text</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for item in items %}
+
+            <tr>
+                <td> {{ item.pk }}
+                <td>{{ item.decision }}</td>
+                <td>{{ item.hotel }}</td>
+                <td>{{ item.polarity }}</td>
+                <td>{{ item.source }}</td>
+                <td>{{ item.text }}</td>
+            </tr>
+
+        {% endfor %}
+    </tbody>
+</table>
+
+
+{% endblock %}
