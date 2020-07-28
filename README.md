@@ -6,7 +6,7 @@
 
 - ```traversing``` reviews
 
-- ```scraping``` all the reviews
+- ```scraping``` the reviews
 
 ### Image
 
