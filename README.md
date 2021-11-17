@@ -2,7 +2,7 @@
 
 ### Features
 
-- ```import``` Excel sheets
+- ```import``` reviews through Excel sheets
 
 - ```Calculations``` through Neural networks
 
